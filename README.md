@@ -1,1 +1,1 @@
-# s3_jeudi_morpion
+Creation d'un jeu de morpion en Peer Programming William Spartacus / 
