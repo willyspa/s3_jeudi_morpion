@@ -1,10 +1,8 @@
-require 'controller'
+
 
 class Router
 
-  def initialize 
-    @controller = controller.new
-  end
+
 
   def perform
     puts "BIENVENUE DANS NOTRE MORPION"
@@ -15,15 +13,20 @@ class Router
       case choice 
       when 1
         puts "Let's Play"
-        @controller.create_game
+        break
+        
       when 2
         puts "à bientôt"
         break
       else 
-        puts "I don't understand. what do you mean ? 1. New Game or 2. Quitter"
+        puts "I don't understand. what do you mean ? 1. New game or 2. Quitter"
       end
+      puts "1"
     end
+    puts "2"
+  
   end
-
+  puts "3"
 
 end
+puts "4"

@@ -10,7 +10,7 @@ class Controller
 
   def create_game
     player = View.create_player
-    board = Game.new
+    #board = Game.new
     turn = 1
     #Game.save
   end
