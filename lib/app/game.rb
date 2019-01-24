@@ -32,55 +32,138 @@ class Game
     puts "C" + @c1 + @c2 + @c3
   end
 
+  def turn_game
+    @turn = 0
+  return @turn
+  end
+
   def board_update(user_choice)
+    
     case user_choice
-        i = 0
+        
     when "A1"
+        if @turn%2 == 0 
+          puts "board_update a1 pair"
+          @a1 = "X"
+          self.board_show
+          @turn += 1
+        elsif @turn%2 != 0
+          puts "board_update a1 pair"
+          @a1 = "O"
+          self.board_show
+          @turn += 1
+        end
+
+
+    when "A2"
+        if i%2 == 0 
+            puts "board_update a1 pair"
+            @a2 = "X"
+            self.board_show
+            i += 1
+          elsif i%2 != 0
+            puts "board_update a1 pair"
+            @a2 = "O"
+            self.board_show
+            i += 1
+          end
+
+
+    when "A3"
         if i%2 == 0 
           puts "board_update a1 pair"
-          @a1 = X
+          @a3 = "X"
           self.board_show
           i += 1
         elsif i%2 != 0
           puts "board_update a1 pair"
-          @a1 = O
+          @a3 = "O"
           self.board_show
           i += 1
         end
-    end
 
-    when "A2"
-        puts "board_update a2"
-        @a2 = @pion
-        self.board_show
-    when "A3"
-        puts "board_update a3"
-        @a3 = @pion
-        self.board_show
     when "B1"
-        puts "board_update b1"
-        @b1 = @pion
-        self.board_show
+        if i%2 == 0 
+          puts "board_update a1 pair"
+          @b1 = "X"
+          self.board_show
+          i += 1
+        elsif i%2 != 0
+          puts "board_update a1 pair"
+          @b1 = "O"
+          self.board_show
+          i += 1
+        end
+
+
     when "B2"
-        puts "board_update B2"
-        @b2 = @pion
-        self.board_show
+        if i%2 == 0 
+          puts "board_update a1 pair"
+          @b2 = "X"
+          self.board_show
+          i += 1
+        elsif i%2 != 0
+          puts "board_update a1 pair"
+          @b2 = "O"
+          self.board_show
+          i += 1
+        end
+
+
     when "B3"
-        puts "board_update B3"
-        @b3 = @pion
-        self.board_show
+        if i%2 == 0 
+          puts "board_update a1 pair"
+          @b3 = "X"
+          self.board_show
+          i += 1
+        elsif i%2 != 0
+          puts "board_update a1 pair"
+          @b3 = "O"
+          self.board_show
+          i += 1
+        end
+
+
     when "C1"
-        puts "board_update c1"
-        @c1 = @pion
-        self.board_show
+        if i%2 == 0 
+          puts "board_update a1 pair"
+          @c1 = "X"
+          self.board_show
+          i += 1
+        elsif i%2 != 0
+          puts "board_update a1 pair"
+          @c1 = "O"
+          self.board_show
+          i += 1
+        end
+
     when "C2"
-        puts "board_update c2"
-        @c2 = @pion
-        self.board_show
+        if i%2 == 0 
+          puts "board_update a1 pair"
+          @c2 = "X"
+          self.board_show
+          i += 1
+        elsif i%2 != 0
+          puts "board_update a1 pair"
+          @c2 = "O"
+          self.board_show
+          i += 1
+        end
+
+
     when "C3"
-        puts "board_update c3"
-        @c3 = @pion
-        self.board_show
+        if i%2 == 0 
+          puts "board_update a1 pair"
+          @c3 = "X"
+          self.board_show
+          i += 1
+        elsif i%2 != 0
+          puts "board_update a1 pair"
+          @c3 = "O"
+          self.board_show
+          i += 1
+        end
+
     else
       puts "iherlr"
     end
