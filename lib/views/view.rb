@@ -11,6 +11,7 @@ class View
     return players
   end
 
+
   def create_game
     puts "La partie commence"
   end
