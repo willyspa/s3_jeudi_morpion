@@ -11,4 +11,19 @@ class View
     return players
   end
 
+  def create_game
+    puts "La partie commence"
+  end
+
+  def choice_player
+    puts "Où souhaites tu jouer ?"
+    user_choice = gets.chomp
+    puts "user choice"
+    return user_choice  
+  end
+
+  def game_update
+    puts "Voici le board"
+  end
+
 end
