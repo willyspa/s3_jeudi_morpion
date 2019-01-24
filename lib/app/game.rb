@@ -25,7 +25,7 @@ class Game
   end
 
   def board_show
-    puts "game show board"
+    
     puts " " + "1" + "2" + "3"
     puts "A" + @a1 + @a2 + @a3 
     puts "B" + @b1 + @b2 + @b3
@@ -43,126 +43,136 @@ class Game
         
     when "A1"
         if @turn%2 == 0 
-          puts "board_update a1 pair"
+          
           @a1 = "X"
           self.board_show
           @turn += 1
+                    
         elsif @turn%2 != 0
-          puts "board_update a1 pair"
+          
           @a1 = "O"
           self.board_show
           @turn += 1
+          
+        
         end
+       
 
 
     when "A2"
-        if i%2 == 0 
-            puts "board_update a1 pair"
-            @a2 = "X"
-            self.board_show
-            i += 1
-          elsif i%2 != 0
-            puts "board_update a1 pair"
-            @a2 = "O"
-            self.board_show
-            i += 1
-          end
-
+        if @turn%2 == 0 
+            
+          @a2 = "X"
+          self.board_show
+          @turn += 1
+        elsif @turn%2 != 0
+            
+          @a2 = "O"
+          self.board_show
+          @turn += 1
+        end
+        
 
     when "A3"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @a3 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @a3 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
+        
 
     when "B1"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @b1 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @b1 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
+        
 
 
     when "B2"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @b2 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @b2 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
-
+        
 
     when "B3"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @b3 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @b3 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
+        
 
 
     when "C1"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @c1 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @c1 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
+        
 
     when "C2"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @c2 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @c2 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
+        
 
 
     when "C3"
-        if i%2 == 0 
-          puts "board_update a1 pair"
+        if @turn%2 == 0 
+          
           @c3 = "X"
           self.board_show
-          i += 1
-        elsif i%2 != 0
-          puts "board_update a1 pair"
+          @turn += 1
+        elsif @turn%2 != 0
+          
           @c3 = "O"
           self.board_show
-          i += 1
+          @turn += 1
         end
+        
 
     else
       puts "iherlr"
