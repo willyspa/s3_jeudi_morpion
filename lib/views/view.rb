@@ -19,6 +19,7 @@ class View
   def choice_player
     puts "Où souhaites tu jouer ?"
     user_choice = gets.chomp.upcase
+    
     return user_choice  
   end
 

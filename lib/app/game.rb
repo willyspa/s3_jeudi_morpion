@@ -42,19 +42,20 @@ class Game
     case user_choice
         
     when "A1"
-        if @turn%2 == 0 
+        if @turn%2 == 0 && @a1 != "X" && @a1 != "O"
           
           @a1 = "X"
           self.board_show
           @turn += 1
                     
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @a1 != "X" && @a1 != "O"
           
           @a1 = "O"
           self.board_show
           @turn += 1
-          
-        
+        else 
+          puts "occupé, rejoue"
+          self.board_show  
         end
        
 
