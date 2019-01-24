@@ -15,22 +15,16 @@ class Controller
 
     @view.create_player
     @view.create_game
+    @game.case_init
     @game.board_init
-    self.game_update
+    @view.game_update
+    @game.board_show
+        
   end
 
-  def game_update
-    puts "6"
-    i = 0
-    @view.game_update
-    while i < 9
-      
-      user_choice = @view.choice_player
-      puts @game.board_update(user_choice)
-      
-      i += 1
-      puts "7" 
-    end  
+  def update_game
+    user_choice = @view.choice_player
+    @game.board_update
   end
 
 

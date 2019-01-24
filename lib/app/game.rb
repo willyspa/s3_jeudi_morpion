@@ -3,44 +3,38 @@
 
 class Game
   
+  def case_init
+    puts "case_init"
+    @a1 = "."
+    @a2 = "."
+    @a3 = "."
+    @b1 = "."
+    @b2 = "."
+    @b3 = "."
+    @c1 = "."
+    @c2 = "."
+    @c3 = "."
+  end
 
   def board_init
-    a = [".", ".", "."]
-    b = [".", ".", "."]
-    c = [".", ".", "."]
-    puts " " + "1" + "2" + "3"
-    puts "A" + a[0] + a[1] + a[2] 
-    puts "B" + b[0] + b[1] + b[2]
-    puts "C" + c[0] + c[1] + c[2]
+
+    puts "game board init"
+    board = [@a1, @a2, @a3, @b1, @b2, @b3, @c1, @c2, @c3]
+    return board
   end
 
-
-    
+  def board_show
+    puts "game show board"
+    puts " " + "1" + "2" + "3"
+    puts "A" + @a1 + @a2 + @a3 
+    puts "B" + @b1 + @b2 + @b3
+    puts "C" + @c1 + @c2 + @c3
+  end
 
   def board_update(user_choice)
-
     puts user_choice
-    puts "board update"
- 
-    case user_choice
-      when "A1"
-        puts "A1_case"
-        a[0] = "X"
-
-      when "A2"
-        puts "A2_case"
-        a[1]="X"
-      else 
-        puts "GZHIJEK"
-      
-    end
-
-    puts " " + "1" + "2" + "3"
-    puts "A" + a[0] + a[1] + a[2] 
-    puts "B" + b[0] + b[1] + b[2]
-    puts "C" + c[0] + c[1] + c[2]
   end
-
+    
 
 end
     
