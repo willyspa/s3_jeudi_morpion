@@ -21,12 +21,7 @@ attr_accessor :win, :draw
     @c3 = "."
   end
 
-  def board_init
 
-    puts "game board init"
-    board = [@a1, @a2, @a3, @b1, @b2, @b3, @c1, @c2, @c3]
-    return board
-  end
 
   def board_show
 
