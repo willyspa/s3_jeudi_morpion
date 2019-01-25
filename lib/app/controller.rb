@@ -6,7 +6,7 @@ require 'view'
 
 class Controller
 
-  def initialize 
+  def initialize
    @view = View.new
    @game = Game.new
   end
@@ -19,7 +19,7 @@ class Controller
     @game.board_init
     @view.game_update
     @game.board_show
-    self.update_game    
+    self.update_game
   end
 
   def update_game
@@ -27,15 +27,20 @@ class Controller
 
     while i < 9
     user_choice = @view.choice_player
-    
-    puts "345"
+    puts "-----------------"
+
+
+
     @game.board_update(user_choice)
-    i += 1    
+    if @game.win
+      Router.new.perform
     end
-    
-    
+
+    i += 1
+    end
+
+
   end
 
 
 end
-  
