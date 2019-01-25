@@ -26,7 +26,14 @@ class Controller
     i = @game.turn_game
 
     while i < 1000
+      if @game.tabxo
+        puts @view.players.values[1]
+      else
+        puts @view.players.values[0]
+      end
+
     user_choice = @view.choice_player
+
 
     @game.board_update(user_choice)
     puts "-------------------"
