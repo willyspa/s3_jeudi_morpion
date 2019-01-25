@@ -40,28 +40,28 @@ attr_accessor :win, :draw, :tabxo
   def victory_x
       x = "X"
       if @a1 == x && @a2 == x && @a3 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @b1 == x && @b2 == x && @b3 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @c1 == x && @c2 == x && @c3 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @a1 == x && @b1 == x && @c1 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @a2 == x && @b2 == x && @c2 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @a3 == x && @b3 == x && @c3 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @c1 == x && @b2 == x && @a3 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
       elsif @a1 == x && @b2 == x && @c3 == x
-        puts "win"
+        puts "TU AS GAGNE"
         @win = true
 
       end
@@ -70,28 +70,28 @@ attr_accessor :win, :draw, :tabxo
     def victory_o
         x = "O"
         if @a1 == x && @a2 == x && @a3 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @b1 == x && @b2 == x && @b3 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @c1 == x && @c2 == x && @c3 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @a1 == x && @b1 == x && @c1 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @a2 == x && @b2 == x && @c2 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @a3 == x && @b3 == x && @c3 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @c1 == x && @b2 == x && @a3 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
         elsif @a1 == x && @b2 == x && @c3 == x
-          puts "win"
+          puts "TU AS GAGNE"
           @win = true
 
         end

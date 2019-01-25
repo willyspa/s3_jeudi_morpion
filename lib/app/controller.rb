@@ -36,12 +36,19 @@ class Controller
 
 
     @game.board_update(user_choice)
-    puts "-------------------"
+  
     if @game.win
+      if @game.tabxo
+        puts @view.players.values[0]
+      else
+        puts @view.players.values[1]
+      end
       Router.new.perform
+
     end
     if @game.draw
       Router.new.perform
+
     end
 
 
