@@ -1,11 +1,32 @@
-Morpion
-Semaine3/Jeudi
+# XTREM GOLDEN MORPION 300 #
 
-Ce projet est réalisé pas William Spartacus @willyspa et Cynthia Jacquelet @Yacinth
-Tic-tac-toe
+Creation d'un jeu de morpion en Peer Programming, dream team :
+~~ Cynthia Jacquelet @Yacinth & William Spartacus @Willyspa ~~
 
-Le tic-tac-toe, aussi appelé « morpion » (par analogie au jeu de morpion) est un jeu de réflexion se pratiquant à deux joueurs au tour par tour dont le but est de créer le premier un alignement. Le jeu se joue généralement avec papier et crayon, mais on a fait mieux !
-Pour jouer, fais le git clone de ce dossier et lance la commande suivante dans ton terminal :
+https://github.com/Yacinth/s3_jeudi_morpion
 
+### Lancer le jeu depuis votre terminal préféré ###
+
+```ruby
 $ ruby app.rb
-Que la chance soit de ton côté ! (surtout si tu joues contre toi-même :shipit:)
+```
+
+### Les Bails ###
+Les joueurs :
+* Joueur 1 a les pions X
+* Joueur 2 a les pions O
+
+En tout tu as 8 conditions de victoire possibles :
+* Aligner 3 symboles identiques en horyzontale (3)
+* ou en verticale (3)
+* ou en diagonale (2)
+
+Partie nulle :
+* Si les deux joueurs ont un niveau équivalent, le board se remplit sans aligner 3 symboles identiques
+
+### Coucou les correcteurs
+### venez on joue.. 
+
+![](https://media3.giphy.com/media/8b29QJQgVwUW4/giphy.gif?cid=3640f6095c4a78c836306a714de5dd85)
+
+

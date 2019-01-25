@@ -6,57 +6,49 @@ require 'view'
 
 class Controller
 
-  def initialize
+  def initialize 
    @view = View.new
    @game = Game.new
   end
 
   def create_game
-
     @view.create_player
     @view.create_game
     @game.case_init
-
     @view.game_update
     @game.board_show
-    self.update_game
+    self.update_game    
   end
 
   def update_game
     i = @game.turn_game
 
-    while i < 1000
-      if @game.tabxo
-        puts @view.players.values[1]
-      else
-        puts @view.players.values[0]
+    while i < 300
+      if @game.piontf
+        puts "              ~~~~~~~~~~"
+        puts "    Où souhaites tu jouer #{@view.players.values[1]}?"
+        puts "              ~~~~~~~~~~"
+      else 
+        puts "              ~~~~~~~~~~"
+        puts "    Où souhaites tu jouer #{@view.players.values[0]}?"
+        puts "              ~~~~~~~~~~"
       end
-
     user_choice = @view.choice_player
-
-
     @game.board_update(user_choice)
-  
-    if @game.win
-      if @game.tabxo
-        puts @view.players.values[0]
-      else
-        puts @view.players.values[1]
+      if @game.win
+        if @game.piontf
+          puts "     #{@view.players.values[0]} CHAMPION.NE"
+        else
+          puts "     #{@view.players.values[1]} CHAMPION.NE"
+        end
+        Router.new.perform
+      
+      elsif @game.nulle
+        Router.new.perform
       end
-      Router.new.perform
-
+    i += 1    
     end
-    if @game.draw
-      Router.new.perform
-
-    end
-
-
-    i += 1
-    end
-
-
   end
 
-
 end
+  
