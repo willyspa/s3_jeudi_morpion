@@ -1,7 +1,7 @@
 Morpion
 Semaine3/Jeudi
 
-Ce projet est réalisé pas Aliya Gizatullina @willyspa et Guillaume Mulezi @Yacinth
+Ce projet est réalisé pas William Spartacus @willyspa et Cynthia Jacquelet @Yacinth
 Tic-tac-toe
 
 Le tic-tac-toe, aussi appelé « morpion » (par analogie au jeu de morpion) est un jeu de réflexion se pratiquant à deux joueurs au tour par tour dont le but est de créer le premier un alignement. Le jeu se joue généralement avec papier et crayon, mais on a fait mieux !
