@@ -3,8 +3,9 @@
 
 class Game
 
-attr_accessor :win
+attr_accessor :win, :draw
 @win = false
+@draw = false
 
 
   def case_init
@@ -100,6 +101,14 @@ attr_accessor :win
         end
       end
 
+      def draw
+        point = "."
+        if @a1 != point && @a2 != point && @a3 != point && @b1 != point && @b2 != point && @b3 != point && @c1 != point && @c2 != point && @c3 != point
+          puts "partie nulle"
+          @draw = true
+        end
+      end
+
 
   def board_update(user_choice)
 
@@ -111,6 +120,8 @@ attr_accessor :win
           @a1 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
 
         elsif @turn%2 != 0 && @a1 != "X" && @a1 != "O"
@@ -118,147 +129,211 @@ attr_accessor :win
           @a1 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
         else
-          puts "occupé, rejoue"
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
           self.board_show
         end
 
 
 
     when "A2"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @a2 != "X" && @a2 != "O"
 
           @a2 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @a2 != "X" && @a2 != "O"
 
           @a2 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
+
     when "A3"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @a3 != "X" && @a3 != "O"
 
           @a3 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @a3 != "X" && @a3 != "O"
 
           @a3 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
     when "B1"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @b1 != "X" && @b1 != "O"
 
           @b1 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @b1 != "X" && @b1 != "O"
 
           @b1 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
 
     when "B2"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @b2 != "X" && @b2 != "O"
 
           @b2 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @b2 != "X" && @b2 != "O"
 
           @b2 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
     when "B3"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @b3 != "X" && @b3 != "O"
 
           @b3 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @b3 != "X" && @b3 != "O"
 
           @b3 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
 
     when "C1"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @c1 != "X" && @c1 != "O"
 
           @c1 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @c1 != "X" && @c1 != "O"
 
           @c1 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
     when "C2"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @c2 != "X" && @c2 != "O"
 
           @c2 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @c2 != "X" && @c2 != "O"
 
           @c2 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+
+        else
+          puts "Recommence 'ligne' et 'colonnes' par exemple A1"
+          self.board_show
         end
 
 
 
     when "C3"
-        if @turn%2 == 0
+        if @turn%2 == 0 && @c3 != "X" && @c3 != "O"
 
           @c3 = "X"
           self.board_show
           self.victory_x
+          self.draw
+
           @turn += 1
-        elsif @turn%2 != 0
+        elsif @turn%2 != 0 && @c3 != "X" && @c3 != "O"
 
           @c3 = "O"
           self.board_show
           self.victory_o
+          self.draw
+
           @turn += 1
+
+        else
+          puts "occupé, rejoue"
+          self.board_show
         end
 
 
     else
-      puts "iherlr"
+      puts "Recommence 'ligne' et 'colonnes' par exemple A1"
     end
 
   end
